@@ -5,7 +5,7 @@ export EXIT_STATUS=0
 
 ./gradlew --console=plain clean
 
-./gradlew --console=plain -Dgeb.env=chromeHeadless test || EXIT_STATUS=$?
+./gradlew --console=plain -Dgeb.env=chromeHeadless check || EXIT_STATUS=$?
 
 if [[ $EXIT_STATUS -ne 0 ]]; then
   exit $EXIT_STATUS

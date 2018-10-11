@@ -11,10 +11,11 @@ class AddressTagLibSpec extends Specification implements TagLibUnitTest<AddressT
 
     void "test address tag"() {
         expect: // <3>
-        tagLib.address() == """<div class='adr'> 
-<div class='street-address'>221B Baker Street</div>
- <span class='locality'>London</span>,
- <div class='country-name'>United Kingdom</div>
+        tagLib.address() == """\
+<div class='adr'> 
+    <div class='street-address'>221B Baker Street</div>
+    <span class='locality'>London</span>,
+    <div class='country-name'>United Kingdom</div>
 </div>"""
     }
 }
