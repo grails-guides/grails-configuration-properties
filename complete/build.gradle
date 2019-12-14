@@ -67,6 +67,7 @@ dependencies {
     testCompile "org.grails:grails-web-testing-support"
     testCompile "org.grails.plugins:geb"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+    testCompile "org.seleniumhq.selenium:htmlunit-driver:2.35.1"
     testCompile "org.seleniumhq.selenium:selenium-remote-driver:3.141.59"
     testCompile "org.seleniumhq.selenium:selenium-api:3.141.59"
     testCompile "org.seleniumhq.selenium:selenium-support:3.141.59"
