@@ -7,7 +7,6 @@ import spock.lang.IgnoreIf
 @Integration
 class AddressSpec extends GebSpec {
 
-    @IgnoreIf({ !sys['geb.env'] })
     def "verify address is displayed in homepage"() {
         when:
         browser.go("/")
