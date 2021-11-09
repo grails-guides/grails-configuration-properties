@@ -3,6 +3,7 @@ buildscript {
         maven { url "https://repo.grails.org/grails/core" }
     }
     dependencies {
+        classpath "gradle.plugin.com.github.erdi.webdriver-binaries:webdriver-binaries-gradle-plugin:2.4"
         classpath "org.grails.plugins:hibernate5:7.1.0"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:3.3.4"
     }
