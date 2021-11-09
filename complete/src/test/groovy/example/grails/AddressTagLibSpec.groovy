@@ -6,7 +6,11 @@ import spock.lang.Specification
 class AddressTagLibSpec extends Specification implements TagLibUnitTest<AddressTagLib> { // <1>
 
     Closure doWithSpring() {{ -> // <2>
-        addressConfiguration(AddressConfiguration)
+        addressConfiguration(AddressConfiguration) {
+            street = '221B Baker Street'
+            city = 'London'
+            country = 'United Kingdom'
+        }
     }}
 
     void "test address tag"() {
